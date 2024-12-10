@@ -1,0 +1,638 @@
+body {
+  font-family: "Poppins", sans-serif;
+  align-items: center;   
+  min-height: 100vh;  
+  margin: 0;              
+}
+
+#loading {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.8); /* opcional */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+
+
+/*CAIXA - PESQUISA*/
+.caixaPesquisa {
+  margin-top: 30px;
+  width: 100%;
+  height: 100px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.containerFluidPesquisarProfessores{
+  width: 675px;
+  height: 100%;
+  margin-left: 120px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+
+}
+
+.bg-transparent {
+  background: #05460400;
+}
+
+/*Modal*/
+#modal-footer {
+  background: #267E64;
+  border: none;
+}
+
+.modal-footer button {
+  background: #8B16C2;
+  border: none;
+  color: white;
+}
+
+.modal-footer button:hover {
+  border: none;
+  background: #b056da;
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+  color: white;
+}
+
+.modal-footer button:active {
+  border: 1px solid white;
+  transform: scale(1.0);
+  background: #b03de6;
+  transform: scale(1.0);
+  transition: transform 0.3s ease;
+  color: white;
+}
+
+
+
+/*Modal fim*/
+
+.hide {
+  display: none;
+}
+
+/*.container-turmaInfo{
+  width: auto;
+  height: auto;
+  gap: 5px;
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+
+}
+
+.container-turmaInfo span {
+  font-size: 25px;
+  font-weight: 500;
+}
+.turma-img-info{
+  width: 100px;
+  height: 30px;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin-bottom: 3px;
+}
+.container-turmaInfo img{
+  width: 35px;
+  height: 35px;
+  transition: transform 0.3s ease;
+
+}
+.container-turmaInfo img:hover{
+  height: 40px;
+  width: 40px;
+  transform: scale(1.1);
+}*/
+
+
+.semProf{
+  width: 100%;
+  height: auto;
+  justify-items: center;
+  justify-content: center;
+  display: flex;
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+/*Button pesquisar + cx de pesquisa*/
+.form-control:hover {
+  background-color: #d8d4d4;
+  transition: 400ms;
+  color: #000;
+}
+
+.btn-pesquisa {
+  /*transform: scaleX(-1);*/
+  cursor: pointer;
+  background: #054604;
+  width: 50px;
+  height: 37px;
+  margin-left: 25px;
+  border: 1px solid white;
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px rgba(80, 20, 50, 0.5);
+  color: white;
+}
+
+.btn-pesquisa:hover {
+  transform: scale(1.05);
+  background-color: white;
+  border: 1px solid #054604;
+  transition: transform 0.3s ease;
+  color: #054604;
+}
+
+.btn-pesquisa:active {
+  transform: scale(1.0);
+}
+
+.pesquisarDiv {
+  background-color: #e5f7f1;
+  width: 100%;
+  height: 35px;
+  margin-left: 15px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 1px 1px 1px rgba(80, 20, 50, 0.5);
+  padding: 1rem;
+  font-size: 18px;
+  margin-top: 2.2px;
+}
+
+/*TABELA*/
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 18px;
+  text-align: center;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px 2px rgba(60, 20, 50, 0.5);
+}
+
+th,
+td {
+  padding: 10px;
+  justify-items: center;
+  justify-content: center;
+}
+
+.botoesEditDel{
+  
+  display: flex;
+}
+
+th {
+  background-color: #469E45;
+  color: #ffffff;
+}
+
+.borderThLeft {
+  border-top-left-radius: 10px;
+}
+
+.borderThRight {
+  border-top-right-radius: 10px;
+}
+
+tr:nth-child(even) {
+  background-color: #d4d0d0;
+}
+
+.container-tabela {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 80px;
+  box-sizing: border-box;
+}
+
+.tabela {
+  width: 1400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.colunas-texto {
+  width: 80%;
+
+}
+
+.btn-editar{
+
+  cursor: pointer;
+ 
+}
+
+.btn-editar img {
+  width: 32px;
+  height: 32px;
+
+}
+
+
+.btn-apagar img {
+  width: 32px;
+  height: 32px;
+
+}
+
+.apaga{
+
+  background: none;
+  border: none;
+
+}
+/* botoes roxos */
+.buttonsContainer{
+  width: 675px;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin-right: 80px;
+}
+
+.btn-gerais {
+  color: white;
+  margin-top: 20px;
+  width: 180px;
+  height: 32px;
+  background-color: #8B16C2;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 2px 2px 2px rgba(80, 20, 50, 0.5);
+}
+
+.btn-gerais a {
+  text-decoration: none;
+  color: #ffffff;
+  margin: none;
+  border: none;
+}
+
+.btn-gerais:hover {
+  background-color: #b056da;
+  transition: 400ms;
+  transform: scale(1.1);
+}
+
+.btn-gerais:active {
+  transform: scale(1.0);
+  background-color: #5f105b;
+}
+
+/*New Cabeçalhos e Rodapé 06-11-24*/
+body {
+  font-family: Arial, sans-serif;
+  background: #F5F5F5;
+}
+
+.navbar {
+  background: #267E64;
+}
+
+.footer {
+  font-size: 0.8rem;
+}
+
+.social-icons a {
+  color: #fff;
+  margin: 0 0.5rem;
+}
+
+.social-icons a:hover {
+  color: #4B9CD3;
+}
+
+.LogoSite {
+  height: 35px;
+  width: 100px;
+}
+
+.navbar .nav-link {
+  color: #ffffff
+}
+
+.navbar .nav-link:hover {
+  color: #9bef90
+}
+
+
+
+.links {
+  text-decoration: none;
+  color: white;
+}
+
+.links:hover {
+  color: rgb(153, 37, 243);
+}
+
+.buttonHover:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+
+@media screen and (max-width: 600px) {
+  .seta {
+    margin-left: 10px;
+  }
+}
+
+.fundoContainerItensGerais {
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+.conteudo-oculto {
+  display: none;
+}
+
+/*Seta*/
+.seta {
+  font-size: 2rem;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  height: 50px;
+  width: 70px;
+  margin-top: 20px;
+  margin-left: 40px;
+  text-decoration: none;
+}
+
+.seta a {
+  color: inherit;
+}
+
+.iconSeta {
+  color: #267E64;
+}
+
+.seta:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.seta:active {
+  transform: scale(1.0);
+  transition: 0.2s;
+}
+
+.iconSeta:active {
+  color: #03533a;
+  transition: 0.2s;
+}
+
+@media screen and (max-width: 600px) {
+  .seta {
+    margin-left: 10px;
+  }
+}
+
+/*bemvindo*/
+.centro-bemVindo{
+  width: 100%;
+  height: auto;
+  justify-items: center;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+  font-family: 'Poppins', sans-serif;
+  
+}
+.mensagemBemVindo p {
+  font-size: 40px;
+  ;
+}
+
+/*Titulo etc*/
+.divTitulo {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.titulo {
+  width: 700px;
+  height: 50px;
+  background: #40C49D;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 18px;
+  border-radius: 10px;
+}
+
+.titulo p {
+  margin-top: 15px;
+}
+
+.iconTitulo{
+  margin-right: 10px;
+}
+
+/*Criar Turma*/
+.divCriarTurma{
+  width: 100%;
+  height: 350px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  display: grid;
+}
+
+.criarTurmaAzul{
+  height: 300px;
+  width: 900px;
+  background: #40C49D;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  display: grid;
+  border-radius: 10px;
+}
+
+.criarTurmaRoxo{
+  height: 150px;
+  width: 160px;
+  background: #8B16C2;
+  border-radius: 10px;
+  border: solid 1px white;
+  align-items: center;
+  justify-content: center;
+  display: grid;
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+}
+
+.criarTurmaRoxo:hover{
+  transform: scale(1.05);
+  transition: 0.2s;
+}
+
+.criarTurmaRoxo:active{
+  transform: scale(1.0);
+  transition: 0.2s;
+  background: #b03de6;
+}
+
+.divIconCriarTurma{
+  margin-top: 25px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  height: 55px;
+  width: 100%;
+}
+
+/*Button Turmas*/
+.divButtonTurmas{
+  height: 70px;
+  width: 430px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.divButtonTurmas button{
+  border: none;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  height: 30px;
+  font-size: 20px;
+  color: black;
+  padding: 10px;
+}
+
+.divButtonTurmas button:hover{
+  transition: 0.2s;
+  color: #b03de6;
+}
+
+/*Modal Registrar professores: */
+.modal_RegistrarProfessor_ContainerHeader{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 400px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  letter-spacing: 2px;
+  height: auto;
+  background: #267E64;
+}
+
+.modal-header{ 
+  font-size: 20px;
+  background: #267E64;
+}
+
+.modal-content{
+  background: #267E64;
+  width: 600px;
+  height: 550px;
+}
+
+.modal-body{
+ 
+  background: #267E64;
+  color: rgb(0, 0, 0);
+}
+
+/*Container/Div dos Inputs = Centralização e style*/
+.centralizaInputsModal{
+  width: 100%;
+  background: #267E64;
+  align-items: center;
+  display: flexbox;
+  padding-top: 30px;
+  justify-content: center;
+  justify-items: center;
+}
+
+.modalInputsIcon{
+  background: rgb(255, 255, 255);
+  width: 400px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  margin: 30px;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.ModalInputs{
+  width: 300px;
+  height: 35px;
+  background: none;
+  border: none;
+  outline: none;         
+  box-shadow: none;
+}
+
+#situacao{
+  width: 400px;
+  height: 35px;
+  background-color: #ffffff;
+  border: none;
+  outline: none;         
+  box-shadow: none;
+  margin-left: 35px;
+}
+
+
+
+#iconModal{
+  margin-right: 7px;
+  color: #545e5b;
+}
+
+@media (max-width: 1080px) {
+  .caixaPesquisa {
+    flex-direction: column;
+  }
+}
+
+
+.space{
+  background-color: rgba(255, 0, 0, 0);
+  width: 100%;
+  height: 60px;
+}

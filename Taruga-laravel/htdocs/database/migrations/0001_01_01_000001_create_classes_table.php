@@ -1,0 +1,20 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+return new class extends Migration
+{
+    public function up(): void
+    {
+        Schema::create('classes', function (Blueprint $table) {
+            $table->id();
+            $table->string('nome', 25);
+            $table->string('serie', 25);
+            $table->foreignId('fk_professores_id')->constrained('teachers');
+            $table->timestamps();
+        });        
+    }
+};
+

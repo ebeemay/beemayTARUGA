@@ -1,0 +1,336 @@
+body {
+    font-family: jost;
+    background: #ffffff;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+  }
+
+/*seta voltar*/
+  .seta {
+    font-size: 2rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 70px;
+    width: 90px;
+    margin-top: 20px;
+    margin-left: 40px;
+    text-decoration: none;
+  }
+  
+  .seta a {
+    color: inherit;
+  }
+  
+  .iconSeta {
+    color: #267E64;
+    
+  }
+  
+  .seta:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  
+  .seta:active {
+    transform: scale(1.0);
+    transition: 0.2s;
+  }
+  
+  .iconSeta:active {
+    color: #03533a;
+    transition: 0.2s;
+  }
+
+/*Centro página*/
+
+.alignCenter {
+    height: 650px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+    margin-top: 20px;
+}
+
+.container-bemVindo {
+    background-color: #D7FBBC;
+    width: 1320px;
+    height: 620px;
+    align-items: center;
+    border: none;
+    box-shadow: 4px 4px 4px rgba(34, 28, 31, 0.5);
+
+}
+
+.header-conteiner {
+
+    width: 100%;
+    height: 90px;
+    background-color: #40C49D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    
+}
+
+.header-conteiner p {
+    font-family: "Jersey 10", serif;
+    font-size: 45px;
+    color: #fff;
+    font-weight: 100;
+    
+}
+
+.pais {
+    width: 90%;
+    background-color: #D7FBBC;
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    margin-top: 80px;
+    margin-left: 70px;
+ 
+    
+    
+}
+
+.align-p{
+    
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-family: "Jost", serif;
+    color: #fafafa;
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.professor {
+    font-size: 18px;
+    margin-left: 40px;
+    border-radius: 35px;
+    border: none;
+    height: 325px;
+    width: 210px;
+    background-color: #8FCAEB;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 5px 5px 5px rgba(34, 28, 31, 0.5);
+}
+
+
+.align-img img{
+    height: 140px;
+    width: 250px;
+}
+
+.aluno {
+    font-size: 18px;
+    margin-left: 40px;
+    border: none;
+    border-radius: 35px;
+    height: 325px;
+    width: 210px;
+    background-color: #9ECF6E;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 5px 5px 5px rgba(34, 28, 31, 0.5);
+}
+
+.instituicao {
+    font-size: 18px;
+    margin-left: 40px;
+    border: none;
+    border-radius: 35px;
+    height: 325px;
+    width: 210px;
+    background-color: #A3679D;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 5px 5px 5px rgba(34, 28, 31, 0.5);
+}
+
+.comunUser {
+    font-size: 18px;
+    margin-left: 40px;
+    margin-right: 25px;
+    border: none;
+    border-radius: 35px;
+    height: 325px;
+    width: 210px;
+    background-color: #E59952;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 5px 5px 5px rgba(34, 28, 31, 0.5);
+
+}
+
+.align-button a{
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    cursor: pointer;
+    background: #FFE177;
+    border-radius: 15px;
+    border: none;
+    font-family: "Jost", serif;
+    color: #4e4d4d;
+    font-size: 20px;
+    font-weight: 200;
+    height: 45px;
+    width: 130px;
+    transition: transform 0.3s ease;
+  
+}
+
+.align-button a:hover{
+    background-color: #f1c942;
+    transform: scale(1.1); 
+
+}
+
+
+.align-button a:active{
+    transform: scale(0.90);
+    background: #f7c524;
+}
+.btnNTC {
+    cursor: pointer;
+    background: #8B16C2;
+    border-radius: 7px;
+    border: none;
+    height: 45px;
+    width: 190px;
+    text-align: center;
+    margin-top: 60px;
+    margin-left: 570px;
+    transition: transform 0.3s ease;
+}
+
+.btnNTC  {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.btnNTC:hover{
+    transform: scale(1.1); 
+    background-color: #7a1f76fd;
+}
+
+.btnNTC:active {
+    transform: scale(0.9);
+    background-color: #5f105b;
+
+}
+
+/*POPUP*/
+
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+
+.popup-content {
+    background: #8FCAEB;
+    padding: 20px;
+    border-radius: 8px;
+    width: 400px;
+    height: 280px;
+    text-align: center;
+    position: relative;
+    box-shadow: 5px 5px 5px rgba(34, 28, 31, 0.5);
+    
+}
+.popup-content p{
+    font-size: 25px;
+    font-weight: bolder;
+    margin-bottom: 0;
+}
+.popup-content a {
+ font-size: 15px;
+ text-align: center;
+ color: #fff;
+ text-decoration: none;
+ font-family: "Jost", sans-serif;
+}
+
+.popup-content button{
+    width: 120px;
+    height: 140px;
+    border: none;
+    background-color: #A3679D;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 10px;
+    display: flexbox;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 5px 5px 5px rgba(34, 28, 31, 0.5);
+    transition: transform 0.3s ease;
+}
+.popup-content button img {
+    height: 70px;
+    width: 120px;
+    margin-left: -5px ;
+       
+
+}
+
+.popup-content button:hover{
+    transform: scale(1.1);
+}
+.popup-content button:active{
+    transform: scale(0.9);
+}
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.close-button img {
+    width: 40px;
+    height: 40px;
+    margin-left: 15px;
+    margin-top: -7px;
+}
+
+.close-button:hover{
+    transform: scale(1.1); 
+}
+
+.close-button:active{
+    transform: scale(0.9);
+}
+

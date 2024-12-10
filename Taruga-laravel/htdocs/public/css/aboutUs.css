@@ -1,0 +1,246 @@
+body {
+    font-family: 'Jost';
+    margin: 0;
+    padding: 0;
+  }
+  
+  /*seta voltar*/
+ .seta {
+  font-size: 2rem;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  height: 70px;
+  width: 90px;
+  margin-top: 20px;
+  margin-left: 40px;
+  text-decoration: none;
+  
+}
+
+.seta a {
+  color: inherit;
+}
+
+.iconSeta {
+  color: #267E64;
+  
+}
+
+.seta:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.seta:active {
+  transform: scale(1.0);
+  transition: 0.2s;
+}
+
+.iconSeta:active {
+  color: #03533a;
+  transition: 0.2s;
+}
+
+/*fim seta*/
+
+
+  .section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    background-color: #f8f8f8;
+  }
+  
+  .texto-content {
+    width: 50%;
+    padding-right: 20px;
+  }
+  
+  .texto-content h1 {
+    color: #8B16C2;
+    letter-spacing: 3px;
+    font-family: 'Jersey 10', sans-serif;
+    font-size: 60px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  
+  .texto-content p {
+    color: #333;
+    font-size: 20px;
+    text-align: justify;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .texto-content p:last-child {
+    font-weight: bold;
+  }
+  
+  .image-content {
+    width: 50%;
+    text-align: right;
+
+  }
+  
+  .image-content img {
+    max-width: 90%;
+    border-radius: 8px;
+    box-shadow: 4px 4px 4px rgba(19, 12, 15, 0.5);
+  }
+  
+  .projetos {
+    text-align: center;
+    background: #a5e0cf;
+    padding: 20px 0;
+    margin-top: 3rem;
+  }
+  
+  .projetos h2 {
+    font-size: 70px;
+    font-family: 'Jersey 10', sans-serif;
+    letter-spacing: 2px;
+    font-weight: 100;
+    color: #10583d;
+    margin-bottom: 40px;
+   
+  }
+
+  .alinhar-cards{
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 1rem;
+    margin-top: 5rem;
+  }
+  .cardAnother {
+    display: flex;
+    background: #f3f0f0;
+    border-radius: 16px;
+    box-shadow: 4px 4px 4px rgba(19, 12, 15, 0.5);
+    overflow: hidden;
+    width: 70%;
+    height: 70%;
+   
+    
+  }
+  
+  .imagem-container {
+    flex: 0.6;
+    overflow: hidden;
+  }
+  
+  .imagem-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .content {
+    flex: 0.9;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+    
+  }
+  
+  .content h1 {
+    color: #8B16C2;
+    font-size: 28px;
+    margin-bottom: 50px;
+  }
+  
+  .content p {
+    color: #333;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+
+  .equipe-section {
+    text-align: center;
+    padding: 40px 20px;
+    
+  }
+
+  .equipe-h1 {
+    background: #a5e0cf;
+    width: 100%;
+    padding: 20px 0;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+
+  }
+  
+  .equipe-section h1 {
+    font-size: 70px;
+    font-family: 'Jersey 10', sans-serif;
+    letter-spacing: 2px;
+    font-weight: 100;
+    color: #10583d;
+    
+  }
+  
+  .equipe-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .equipe-card {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 1px 2px 5px rgba(19, 12, 15, 0.5);
+    padding: 20px;
+    text-align: center;
+    width: 220px;
+    margin-bottom: 6rem;
+    margin-top: 3rem;
+  }
+  
+  .image-wrapper {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  .image-wrapper img {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+  }
+  
+  .equipe-card h2 {
+    font-size: 18px;
+    color: #8B16C2;
+    margin: 10px 0;
+    font-weight: bold;
+  }
+  
+  .equipe-card p {
+    font-size: 16px;
+    color: #666;
+    margin: 5px 0 15px;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .social-icons img {
+    width: 50px;
+    height: 50px;
+    filter: invert(100%) contrast(100%);
+  }

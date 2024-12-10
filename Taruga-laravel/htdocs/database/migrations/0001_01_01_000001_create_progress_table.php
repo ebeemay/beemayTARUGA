@@ -1,0 +1,21 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+return new class extends Migration
+{
+    public function up(): void
+    {
+        Schema::create('progress', function (Blueprint $table) {
+            $table->id();
+            $table->decimal('status', 3);
+            $table->foreignId('fk_estudantes_id')->constrained('students');
+            $table->foreignId('fk_atividades_id')->constrained('activities');
+            $table->timestamps();
+        });
+        
+    }
+};
+

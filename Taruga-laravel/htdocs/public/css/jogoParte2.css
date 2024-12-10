@@ -1,0 +1,245 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  background-image: linear-gradient(to left, rgb(198, 238, 194), rgb(255, 182, 250), rgb(252, 200, 116));
+  background-size: 500% 100%;
+  animation: degrade-animado 5s infinite alternate;
+}
+
+.card {
+  width: 150px;
+  height: 150px;
+  border: 2px solid white;
+  display: inline-block;
+  margin: 10px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+}
+
+.card.correct {
+  transition: 0.2ms;
+  border: 3px solid green;
+  animation: zooming 0.5s;
+}
+
+.card.wrong {
+  transition: 0.2ms;
+  border: 3px solid red;
+  animation: shake 0.5s;
+}
+
+.card.selected {
+  border-color: yellow;
+  box-shadow: 0 0 10px rgba(255, 255, 0, 0.7);
+}
+
+@keyframes shake {
+
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  25% {
+    transform: translateX(-5px);
+  }
+
+  75% {
+    transform: translateX(5px);
+  }
+}
+
+@keyframes zooming {
+
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+/*Animação do background*/
+@keyframes degrade-animado {
+  0% {
+      background-position-x: 0%;
+  }
+
+  100% {
+      background-position-x: 100%;
+  }
+}
+
+/*Botao Zoom*/
+@keyframes botao {
+  0% {
+      transform: scale(1.0);
+  }
+
+  100% {
+      transform: scale(1.2);
+  }
+}
+
+.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/*Container Mini-Game*/
+.containerGeral {
+  width: 100%;
+  height: 600px;
+  background: rgba(0, 0, 255, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.containerJogo {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1000px;
+  height: 520px;
+  border-radius: 15px;
+  border: 2px solid white;
+  background: rgb(255, 188, 130);
+}
+
+.containerparesContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1000px;
+  height: 220px;
+}
+
+.paresContainer {
+  margin-left: 20px;
+  margin-right: 20px;
+  background: rgb(226, 169, 109);
+  border-radius: 15px;
+  width: 400px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid white;
+}
+
+/*POPUP*/
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.popup.show {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.popup-content {
+  z-index: 3;
+  position: absolute;
+  width: 600px;
+  height: 450px;
+  background-image: linear-gradient(to left, rgb(198, 238, 194), rgb(255, 182, 250), rgb(146, 179, 248));
+  border-radius: 25px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border: 3px solid white;
+}
+
+.popup-content img {
+  height: 350px;
+  animation: backInDown;
+  animation-duration: 2s;
+  cursor: pointer;
+}
+
+.popup-content button {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  cursor: pointer;
+  background: #36c299;
+  border-radius: 30px;
+  border: 1px solid #fff;
+  height: 55px;
+  width: 220px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 25px;
+  font-family: Jost;
+  transition: background-color 0.3s, transform 0.2s;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.popup-content button:hover {
+  animation-name: botao;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+  box-shadow: 1px rgba(40, 216, 113, 0.5);
+}
+
+/*Transição padrão pra buttons*/
+.popup-content button:active {
+  background: #4bf8c4;
+  transition: 0.3s;
+  border: 1px solid #fff;
+}
+
+/*titulo*/
+.divTitulo {
+  width: 100%;
+  height: 120px;
+  background:#f2f7bd;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  display: flex;
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+
+.divTitulo h1{
+  color: #155a41;
+  border: none;
+  font-family: 'Jersey 10', sans-serif;
+  font-size: 60px;
+  font-weight: lighter;
+  letter-spacing: 3px;
+  text-align: center;
+}

@@ -1,0 +1,137 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    background-image: linear-gradient(to left, rgb(185, 252, 226), rgb(248, 245, 207), rgb(242, 209, 243));
+    background-size: 500% 100%;
+    animation: degrade-animado 5s infinite alternate;
+}
+
+/*Começo container do video*/
+.container {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    background-image: url('https://itens-cabecalho.s3.us-east-1.amazonaws.com/GifBack.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #4bf8c4;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .7);
+}
+
+.container .video-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    padding: 10px;
+}
+
+.container .video-container .video {
+    height: 550px;
+    width: 1050px;
+    border: 5px solid #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .7);
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.container .video-container .video video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: .2s linear;
+}
+
+/*titulo*/
+.divTitulo {
+    width: 100%;
+    height: 80px;
+    background:#f1e0aa;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    display: flex;
+    margin-top: 50px;
+}
+
+.divTitulo h1{
+    color: #10583D;
+    border: none;
+    font-family: 'Jersey 10', sans-serif;
+    font-size: 65px;
+    letter-spacing: 3px;
+}
+
+
+/*Button*/
+.divButton {
+    width: 100%;
+    height: 80px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 50px;
+}
+
+#continueButton {
+    cursor: pointer;
+    background: #8B16C2;
+    border-radius: 7px;
+    border: none;
+    height: 55px;
+    width: 220px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 25px;
+    font-family: 'Jost', sans-serif;
+    transition: background-color 0.3s, transform 0.2s;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+#continueButton:hover {
+    animation-name: botao;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    box-shadow: 1px rgba(43, 9, 75, 0.5);
+}
+
+/*Transição padrão pra buttons*/
+#continueButton:active {
+    background: #573183;
+    transition: 0.3s;
+}
+
+/*Keyframes*/
+/*Faz o botão ficar em uma animação de loop que aumenta e diminui ele: */
+@keyframes botao {
+    0% {
+        transform: scale(1.0);
+    }
+
+    100% {
+        transform: scale(1.2);
+    }
+}
+/*Animação do background*/
+@keyframes degrade-animado {
+    0% {
+        background-position-x: 0%;
+    }
+
+    100% {
+        background-position-x: 100%;
+    }
+}
+/*Fim container do video*/

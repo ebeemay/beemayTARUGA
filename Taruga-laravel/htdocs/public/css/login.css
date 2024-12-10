@@ -1,0 +1,234 @@
+body {
+    font-family: jost;
+    background: #c5ffb6;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /*Cabeçalho*/
+
+  /*fim-cabeçalho*/
+
+ /*seta voltar*/
+ .seta {
+  font-size: 2rem;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  height: 70px;
+  width: 90px;
+  margin-top: 20px;
+  margin-left: 40px;
+  text-decoration: none;
+}
+
+.seta a {
+  color: inherit;
+}
+
+.iconSeta {
+  color: #267E64;
+  
+}
+
+.seta:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.seta:active {
+  transform: scale(1.0);
+  transition: 0.2s;
+}
+
+.iconSeta:active {
+  color: #03533a;
+  transition: 0.2s;
+}
+
+/*fim seta*/
+
+  .alignDivForm {
+    width: 100%;
+    height: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .DivForm {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    height: 515px;
+    width: 850px;
+    border-radius: 35px;
+    box-shadow: 4px 4px 4px rgba(34, 28, 31, 0.5);
+  }
+
+  .div-DivInf {
+    height: 515px;
+    width: 300px;
+    border-bottom-left-radius: 35px;
+    border-top-left-radius: 35px;
+    background-color: #40C49D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+  }
+
+  .DivInf {
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 85%;
+    margin-top: 20px;
+  }
+
+  #AlignTituloLogin {
+    margin-top: 60px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 55px;
+    color: #46828f;
+    text-align: center;
+    
+  }
+
+  #AlignTituloLogin h1{
+    font-weight: 100;
+    font-family: "Jersey 10", sans-serif;
+    font-size: 60px;
+  }
+
+  #TarugaTitulo {
+    font-size: 40px;
+    font-weight: 100;
+    color: #fff;
+    margin-bottom: 45px;
+    font-family: "Jersey 10", sans-serif;
+
+  }
+
+  #BemVindoTitulo {
+    font-size: 30px;
+    font-weight: 100;
+    color: #fff;
+    margin-bottom: 15px;
+    font-family: "Jersey 10", sans-serif;
+  }
+
+  #TextTitulo {
+    font-size: 25px;
+    text-align: center;
+    color: #fff;
+    font-family: Jost;
+  }
+
+  #AlignImgDivInf {
+    height: 130px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+
+  .DivInf img {
+    height: 120px;
+    width: 120px;
+  }
+
+  .DivInf p {
+    text-align: center;
+    font-size: 21px;
+  }
+
+  #alignEmail input {
+    padding: 5px;
+    border: none;
+    border-radius: 6px;
+    font-size: 17px;
+    background-color: #E4E4E4;
+    display: flex;
+    width: 400px;
+    height: 35px;
+  }
+
+  #alignSenha input {
+    padding: 5px;
+    border: none;
+    border-radius: 6px;
+    font-size: 17px;
+    background-color: #E4E4E4;
+    display: flex;
+    width: 400px;
+    height: 35px;
+  }
+
+.link-senha {
+  color: #3e5ab4;
+  font-size: 19px;
+  text-decoration: none;
+  margin-left: 310px;
+
+}
+  #alignBottomEnviar input {
+    background-color: #8B16C2;
+    margin-left: 200px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 7px;
+    width: 145px;
+    height: 35px;
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    display: flex;
+    box-shadow: 4px 4px 4px rgba(34, 28, 31, 0.5);
+    transition: transform 0.3s ease;
+
+  }
+
+  #alignBottomEnviar input:hover {
+    background-color: #7a1f76fd;
+    transform: scale(1.1); 
+    cursor: pointer;
+  }
+  #alignBottomEnviar input:active {
+    transform: scale(0.90);
+    background: #5f105b;
+  }
+
+  .alignLog {
+    background: #fff;
+    height: 500px;
+    width: 70%;
+
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+
+  #alignEmail {
+    margin-bottom: 25px;
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 55px;
+  }
+
+  #alignSenha {
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 55px;
+  }

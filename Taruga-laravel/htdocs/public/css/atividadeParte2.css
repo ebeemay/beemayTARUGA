@@ -1,0 +1,176 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    background-image: linear-gradient(to left, rgb(198, 238, 194), rgb(255, 182, 250), rgb(252, 200, 116));
+    background-size: 500% 100%;
+    animation: degrade-animado 5s infinite alternate;
+}
+
+.container {
+    padding: 20px;
+    background-image: linear-gradient(to left, rgb(198, 238, 194), rgb(255, 182, 250), rgb(252, 200, 116));
+    background-size: 500% 100%;
+    animation: degrade-animado 5s infinite alternate;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    height: 780px;
+}
+
+
+h1 {
+    color: #155a41;
+    border: none;
+    font-family: 'Jersey 10', sans-serif;
+    font-size: 70px;
+    font-weight: border;
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+.cards {
+    height: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    background: #A3679D;
+    border: 2px solid white;
+}
+
+.card {
+    background: white;
+    height: 330px;
+    width: 250px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s, border-color 0.3s;
+    cursor: pointer;
+}
+
+.card img {
+    height: 230px;
+    width: 230px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    border: 2px solid black;
+}
+
+.card button {
+    cursor: pointer;
+    background: #36c299;
+    height: 45px;
+    width: 220px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 25px;
+    font-family: 'Jost', sans-serif;
+    transition: background-color 0.3s, transform 0.2s;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.card button:hover {
+    background: #0b9f73;
+}
+
+.card button:active {
+    background: #077151;
+    transform: scale(0.9);
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.card[data-correto="true"].selecionada {
+    border-color: rgb(90, 221, 90);
+    border: 4px solid ;
+}
+
+.card[data-correto="false"].selecionada {
+    border-color: rgb(143, 22, 22);
+    border: 4px solid ;
+}
+
+#feedback {
+  
+    width: 500px;
+    height: 100px;
+    margin-top: 20px;
+    font-size: 25px;
+    font-weight: bold;
+    min-height: 100px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Jost', sans-serif;
+}
+
+#btn-continuar {
+    cursor: pointer;
+    background: #8B16C2;
+    border-radius: 7px;
+    border: none;
+    height: 55px;
+    width: 220px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 25px;
+    font-family: 'Jost', sans-serif;
+    transition: background-color 0.3s, transform 0.2s;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 15px;
+}
+
+#btn-continuar:hover {
+    
+    animation-name: botao;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    box-shadow: 1px rgba(40, 216, 113, 0.5);
+}
+
+#btn-continuar:active {
+    background: #633499;
+    transform: scale(0.9);
+}
+
+
+/*Animação do background*/
+@keyframes degrade-animado {
+    0% {
+        background-position-x: 0%;
+    }
+
+    100% {
+        background-position-x: 100%;
+    }
+}
+
+/*Faz o botão ficar em uma animação de loop que aumenta e diminui ele: */
+@keyframes botao {
+    0% {
+        transform: scale(1.0);
+    }
+
+    100% {
+        transform: scale(1.2);
+    }
+}
+/* Popup */

@@ -1,0 +1,413 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  background-image: linear-gradient(to left, rgb(239, 255, 182), rgb(241, 205, 164), rgb(245, 182, 185));
+  background-size: 500% 100%;
+  animation: degrade-animado 5s infinite alternate;
+}
+
+/*seta voltar*/
+.seta {
+  font-size: 2rem;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  height: 70px;
+  width: 90px;
+  margin-top: 10px;
+  margin-left: 40px;
+  text-decoration: none;
+}
+
+.seta a {
+  color: inherit;
+}
+
+.iconSeta {
+  color: #267E64;
+  
+}
+
+.seta:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.seta:active {
+  transform: scale(1.0);
+  transition: 0.2s;
+}
+
+.iconSeta:active {
+  color: #03533a;
+  transition: 0.2s;
+}
+
+/*fim seta*/ 
+.imagemCongratulations{
+    height: 300px;
+    width: 300px;
+  }
+  
+  .questions-container {
+    width: 100%;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .question {
+    font-size: 24px;
+    text-align: center;
+  }
+  
+  .answers-container {
+    height: 350px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px;
+  }
+  
+  /*imagem*/
+  .answer-image {
+    background: rgb(68, 69, 64);
+    width: 230px;
+    height: 285px;
+    border-radius: 25px;
+    border: #000 2px solid;
+    cursor: pointer;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.80);
+  }
+  
+  .answer-image:hover {
+    transform: scale(1.1);
+    transition: all 300ms ease-out;
+  }
+  
+  .answer-image:not(hover) {
+    transition: all 300ms ease-out;
+  }
+  
+  
+  .answer-image.correct {
+    border-color: #049b48;
+  }
+  
+  .answer-image.incorrect {
+    border-color: #a10101;
+  }
+  
+  .button:not(:disabled):hover {
+    filter: brightness(0.8);
+  }
+  
+  /* Finish game */
+  .final-message {
+    margin-top: 30px;
+    font-size: 30px;
+    text-align: center;
+    color:#000;
+    font-weight: bold;
+  }
+  
+  .final-message span {
+    display: block;
+    margin-top: 8px;
+  }
+  
+  /* General styles */
+  .hide {
+    display: none;
+  }
+    
+  
+  /*Inicio Divs*/
+  .ccImg {
+    width: 100%;
+    height: 68%;
+    display: flex;
+    align-items: self-end;
+    justify-content: center;
+  }
+  
+  .containerImg {
+    width: 90%;
+    height: 90%;
+    display: flex;
+    align-items: self-end;
+    justify-content: center;
+  }
+  
+  .container {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  
+  .containerGame {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .containerCheck {
+    width: 30%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .containerH1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #000;
+    font-size: 30px;
+    font-weight: bolder;
+    font-family: 'Jost', sans-serif;
+  }
+  
+  .backGame {
+    background: #8FCAEB;
+    height: 92%;
+    width: 95%;
+    border: solid 2px #fff;
+    box-shadow: 4px 4px 4px rgba(19, 12, 15, 0.5);
+    margin-left: 45px;
+    font-family: 'Jost', sans-serif;
+  }
+  
+  .tituloGato {
+    color: black;
+  }
+  
+  /*Divs dentro do container amarelo*/
+  .divTitulo {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Jost', sans-serif;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+  
+  .divTitulo span {
+    width: 600px;
+    height: 48px;
+    background:#E59952;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    color: #fff;
+    border: 2px #fff solid;
+    font-family: 'Jost', sans-serif;
+  }
+  
+
+  .divNextQuestion {
+    width: 100%;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 15px;
+  }
+  
+
+  .divButtonStart {
+    width: 100%;
+    height: 550px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 50px;
+  }
+  
+  .button {
+    cursor: pointer;
+    background: #8B16C2;
+    border: 2px solid #fff;
+    height: 55px;
+    width: 255px;
+    color: #fff;
+    font-size: 25px;
+    font-family: Jost;
+    box-shadow: 4px 4px 4px rgba(19, 12, 15, 0.5);
+    transition: background-color 0.3s, transform 0.2s;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .button:hover {
+    animation-name: botao;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    box-shadow: 1px #801fa7;
+  }
+  
+  /*gif tras*/
+  .divStart-quiz {
+    border-radius: 25px;
+    background-image: url('./imagens/GifBack.gif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 550px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+  
+
+  .cssButtons:active {
+    background: #4bf8c4;
+    transition: 0.3s;
+    border: 2px solid #fff;
+  }
+  
+  /*Fim Buttons*/
+  
+
+  .inactive {
+    cursor: not-allowed;
+    pointer-events: none;
+    filter: opacity(60%);
+    animation: degrade-animado 5s infinite alternate;
+  }
+  
+  .mostrar {
+    opacity: 1;
+    animation: fadeIn 0.5s forwards;
+    display: block;
+  }
+  
+  .esconder {
+    opacity: 0;
+    animation: fadeOut 0.3s forwards;
+    display: none;
+  }
+  
+  .imagem-pulando {
+    animation: pular 2s infinite;
+  }
+  
+  /*Keyframes*/
+  @keyframes botao {
+    0% {
+      transform: scale(1.0);
+    }
+  
+    100% {
+      transform: scale(1.2);
+    }
+  }
+  
+  /*Animação do background*/
+  @keyframes degrade-animado {
+    0% {
+      background-position-x: 0%;
+    }
+  
+    100% {
+      background-position-x: 100%;
+    }
+  }
+  
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+  
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+      transform: scale(1);
+    }
+  
+    to {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+  }
+  
+  @keyframes pular {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-30px); 
+    }
+    100% {
+        transform: translateY(0);
+    }
+  }
+
+  /*Barra de progresso*/
+  #progress-container {
+    width: 50%;
+    background-color: #e0e0e0;
+    margin: 20px auto; 
+    height: 30px;
+    position: relative;
+    border-radius: 25px; 
+    transition: width 1s ease; 
+    border: #000 solid 1px;
+  }
+  
+  #progress-bar {
+    width: 0%; 
+    height: 100%;
+    background-color: #4caf50;
+    transition: width 1s ease;
+    position: relative;
+    border-radius: 25px; 
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+  
+  #progress-value {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: bold;
+    transition: width 1s ease; 
+  }
+  
+  
+  

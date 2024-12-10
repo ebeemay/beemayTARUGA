@@ -1,0 +1,219 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    background-image: linear-gradient(to left, rgb(239, 255, 182), rgb(185, 245, 222), rgb(182, 204, 245));
+    background-size: 500% 100%;
+    animation: degrade-animado 5s infinite alternate;
+}
+/*seta voltar*/
+.seta {
+    font-size: 2rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 70px;
+    width: 90px;
+    margin-top: 10px;
+    margin-left: 40px;
+    text-decoration: none;
+  }
+  
+  .seta a {
+    color: inherit;
+  }
+  
+  .iconSeta {
+    color: #267E64;
+    
+  }
+  
+  .seta:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  
+  .seta:active {
+    transform: scale(1.0);
+    transition: 0.2s;
+  }
+  
+  .iconSeta:active {
+    color: #03533a;
+    transition: 0.2s;
+  }
+
+  /*fim seta*/
+container{
+    position: relative;
+    min-height: 100vh;
+    background-image: linear-gradient(to left, rgb(185, 252, 226), rgb(248, 245, 207), rgb(242, 209, 243));
+    border: 2px solid #fff;
+    margin-top: 40px;
+}
+
+/*titulo*/
+.divTitulo {
+    width: 100%;
+    height: 80px;
+    background:#f1e0aa;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    display: flex;
+    margin-top: 50px;
+}
+
+.divTitulo h1{
+    color: #10583D;
+    border: none;
+    font-family: 'Jersey 10', sans-serif;
+    font-size: 65px;
+    letter-spacing: 3px;
+}
+
+.container h1{
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    font-size: 40px;
+    font-weight: normal;
+}
+
+
+.container .video-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    padding: 10px;
+}
+
+.container .video-container .video{
+    height: 250px;
+    width: 350px;
+    border: 5px solid #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.7);
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.container .video-container .video video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: .2s linear;
+}
+
+.container .video-container .video:hover video{
+    transform: scale(1.1);
+}
+
+/*Animações teste*/
+.container .popup-video{
+    position: fixed;
+    top: 0; left: 0;
+    z-index: 100;
+    background: rgba(0,0,0,.8);
+    height: 100%;
+    width: 100%;
+    display: none;
+}
+
+.container .popup-video video{
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 750px;
+    border-radius: 10px;
+    border: 3px solid #fff;
+    object-fit: cover;
+}
+
+.container .popup-video span{
+    position: absolute;
+    top: 5px; right: 20px;
+    font-size: 50px;
+    color: #fff;
+    font-weight: bolder;
+    z-index: 100;
+    cursor: pointer;
+}
+
+
+
+.divButton {
+    width: 100%;
+    height: 80px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.cssButtons {
+    cursor: pointer;
+    background: #8B16C2;
+    border-radius: 7px;
+    border: none;
+    height: 55px;
+    width: 220px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 25px;
+    font-family: 'Jost', sans-serif;
+    transition: background-color 0.3s, transform 0.2s;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 35px;
+}
+
+.cssButtons:hover {
+    animation-name: botao;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    box-shadow: 1px rgba(40, 216, 113, 0.5);
+}
+
+/*Transição padrão pra buttons*/
+.cssButtons:active {
+    background: #4bf8c4;
+    transition: 0.3s;
+    border: 1px solid #fff;
+}
+/*Fim Buttons*/
+
+/*Keyframes*/
+/*Faz o botão ficar em uma animação de loop que aumenta e diminui ele: */
+@keyframes botao {
+    0% {
+        transform: scale(1.0);
+    }
+
+    100% {
+        transform: scale(1.2);
+    }
+}
+/*Animação do background*/
+@keyframes degrade-animado {
+    0% {
+        background-position-x: 0%;
+    }
+
+    100% {
+        background-position-x: 100%;
+    }
+}
+
+/*Responsividade*/
+@media (max-width: 768px) {
+    .container .popup-video video{
+        width: 95%;
+    }
+}
